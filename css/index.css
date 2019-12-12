@@ -1,1 +1,236 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+html,
+body {
+  height: 100%;
+  font-size: 62.5%;
+  font-family: 'Patrick Hand', cursive;
+}
+@font-face {
+  font-family: 'Lilita One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lilita One'), local('LilitaOne'), url(https://fonts.gstatic.com/s/lilitaone/v7/i7dPIFZ9Zz-WBtRtedDbYEF8QA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Patrick Hand';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Patrick Hand'), local('PatrickHand-Regular'), url(https://fonts.gstatic.com/s/patrickhand/v13/LDI1apSQOAYtSuYWp8ZhfYe8XsLO.ttf) format('truetype');
+}
+.header {
+  display: flex;
+}
+.header nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 1% 11% 0 0 ;
+}
+.header nav a {
+  color: black;
+  margin: 2%;
+  font-size: 2rem;
+}
+.header nav a:hover {
+  color: blue;
+}
+.mainBody {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 75%;
+  background-color: #cdced1;
+}
+.mainBody img {
+  width: 40rem;
+  height: 30rem;
+  margin: 2%;
+}
+.mainBody h1 {
+  font-size: 4rem;
+  margin: 0 0 0 2%;
+  font-family: 'Lilita One', cursive;
+}
+.mainBody h4 {
+  font-size: 3rem;
+  margin: 0 0 0 2%;
+}
+.mainBody p {
+  font-size: 2rem;
+  margin: 2%;
+}
+.mainBody .btn {
+  border: 2px solid #a5a8b0;
+  width: 15%;
+  text-align: center;
+  margin: 2% 0 5% 2%;
+  border-radius: 10%;
+  background-color: #a5a8b0;
+  color: white;
+  padding: 1% 0 0 0;
+}
+.mainBody .btn p {
+  margin: 0 0 10% 0;
+}
+.mainBody .btn:hover {
+  background-color: blue;
+}
+.middle {
+  display: flex;
+  margin: 0 0 0 12%;
+}
+.middle .middleBody h2 {
+  margin: 2%;
+  font-size: 4rem;
+  font-family: 'Lilita One', cursive;
+}
+.middle .middleBody p {
+  font-size: 2rem;
+  margin: 2%;
+}
+.stuff {
+  width: 350%;
+  font-size: 3rem;
+  margin: 0 14% 0 0;
+}
+.stuff .stuffBody {
+  flex-direction: flex-start;
+  margin: 1% 0 0 0;
+  border: 1px solid black;
+}
+.stuff p {
+  margin: 1%;
+  border: 1px solid black;
+}
+.stuff h3 {
+  background-color: #a5a8b0;
+  margin: 1%;
+  font-family: 'Lilita One', cursive;
+  border: 1px solid black;
+}
+.workBody {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 11%;
+  width: 75%;
+}
+.workBody h2 {
+  font-size: 4rem;
+  margin: 2%;
+  width: 100%;
+  font-family: 'Lilita One', cursive;
+}
+.workBody table {
+  font-size: 3rem;
+  margin: 2%;
+  width: 100%;
+  border: 1px solid black;
+}
+th {
+  border: 1px solid black;
+  background-color: #a5a8b0;
+}
+td {
+  border: 1px solid black;
+}
+footer {
+  display: flex;
+  justify-content: center;
+}
+footer nav {
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  margin: 0 auto ;
+  background-color: #a5a8b0;
+}
+footer a {
+  color: black;
+  margin: 2%;
+  font-size: 2rem;
+}
+footer a:hover {
+  color: blue;
+}
+.form {
+  width: 75%;
+  margin: 0 auto;
+  font-size: 3rem;
+  font-family: 'Lilita One', cursive;
+}
+.form input[type=text],
+.form select,
+.form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.form input[type=submit] {
+  background-color: #a5a8b0;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.form input[type=submit]:hover {
+  background-color: blue;
+}
+.form .container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.line {
+  border: 1px solid black;
+  margin: 2% 0 2% 10%;
+  width: 80%;
+  justify-items: center;
+}
+@media (max-width: 500px) {
+  .mainBody {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    width: 75%;
+    background-color: #cdced1;
+  }
+  .mainBody img {
+    width: 35rem;
+    height: 30rem;
+    margin: 2% 0 0 3%;
+  }
+  .middle {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainBody .btn {
+    width: 50%;
+    justify-content: center ;
+    margin: 2% 2% 5% 22%;
+  }
+  .mainBody .btn:hover {
+    background-color: blue;
+  }
+  .middle {
+    margin: 2%;
+  }
+}
